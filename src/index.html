@@ -1,48 +1,242 @@
 <!DOCTYPE html>
-<html lang="ua">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="description"
-      content="Welcome to Flover Lover', where you can a choose a bouquet for every occasion."
-    />
-    <title>Flover Lover</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Stalemate&family=Vollkorn:wght@400..900&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
-    />
-    <link href="./images/favicon-flowers.ico" rel="icon" type="image/x-icon" />
-    <link rel="stylesheet" href="./css/style.css" />
+    <title>Документ</title>
+    <link rel="stylesheet" href="./styles.css" />
   </head>
-
   <body>
-    <header>
-      <include src="./partials/header.html"></include>
-    </header>
+    <div class="wrapper">
+      <div class="box-general">
+        <div class="box-left">
+          <p class="title"><span>Документ</span></p>
+          <form class="doc-form js-form">
+            <div class="box">
+              <label for="document-name"
+                >Найменування документа у реєстрі:</label
+              >
+              <input
+                class="input"
+                type="text"
+                name="document-name"
+                id="document-name"
+              />
+            </div>
+            <div class="container">
+              <div class="container-left">
+                <div class="box">
+                  <label for="sender">Відправник:</label>
+                  <input type="text" name="sender" id="sender" />
+                </div>
+                <div class="box">
+                  <label for="recipient">Отримувач:</label>
+                  <input type="text" name="recipient" id="recipient" />
+                </div>
+                <div class="box">
+                  <label for="number">Номер:</label>
+                  <input
+                    class="input-2"
+                    type="text"
+                    name="number"
+                    id="number"
+                  />
+                </div>
+                <div class="box">
+                  <label for="date">Дата:</label>
+                  <input class="input-2" type="text" name="date" id="date" />
+                </div>
+                <div class="box">
+                  <label for="order-number">Номер замовлення:</label>
+                  <input
+                    class="input-2"
+                    type="text"
+                    name="order-number"
+                    id="order-number"
+                  />
+                </div>
+              </div>
+              <div class="container-right">
+                <div class="box">
+                  <label for="sender-organization"></label>
+                  <input
+                    class="input"
+                    type="text"
+                    name="sender-organization"
+                    id="sender-organization"
+                  />
+                </div>
+                <div class="box">
+                  <label for="recipient-organization"></label>
+                  <input
+                    class="input"
+                    type="text"
+                    name="recipient-organization"
+                    id="recipient-organization"
+                  />
+                </div>
+                <div class="box">
+                  <label for="sum">Сума:</label>
+                  <input type="text" name="sum" id="sum" />
+                </div>
+                <div class="box">
+                  <label for="full-name">ПІБ підписанта:</label>
+                  <input type="text" name="full-name" id="full-name" />
+                </div>
+                <div class="box">
+                  <label for="email">Електронна пошта:</label>
+                  <input type="text" name="email" id="email" />
+                </div>
+              </div>
+            </div>
+            <div class="form-message">
+              <label for="comment">Коментар:</label>
+              <textarea class="message" name="comment" id="comment"></textarea>
+            </div>
+          </form>
+        </div>
+        <div class="box-right">
+          <p class="title"><span>Наступні дії</span></p>
+          <div class="right">
+            <p class="text">ВХІДНИЙ ДОКУМЕНТ</p>
+            <div class="btn-box">
+              <button type="submit" class="btn" data-modal-open>
+                Погодити
+              </button>
+              <button
+                type="button"
+                class="btn"
+                onclick="alert('Неможливо закрити те, що не відкривалося &#128517;')"
+              >
+                Закрити
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="div-state">
+        <p class="title"><span>Стан документа</span></p>
+        <p><b class="js-state"></b></p>
+      </div>
+      <div class="box-general">
+        <div class="box-left">
+          <p class="title"><span>Журнал</span></p>
+          <table class="js-table">
+            <thead>
+              <tr>
+                <th>Дата</th>
+                <th>Інформація</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="js-date"></td>
+                <td class="js-info"></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="box-right">
+          <p class="title"><span>Підпис</span></p>
+          <form class="form-doc">
+            <label> <input type="checkbox" /> ЕП Дмитро Шевченко </label>
+            <button type="button" class="btn">Підписи на документі</button>
+          </form>
+        </div>
+      </div>
 
-    <main>
-      <include src="./partials/hero.html"></include>
-      <include src="./partials/advantages.html"></include>
-      <include src="./partials/gallery.html"></include>
-      <include src="./partials/delivery.html"></include>
-      <include src="./partials/reviews.html"></include>
-      <include src="./partials/quick_order.html"></include>
-    </main>
+      <!-- Modal -->
 
-    <footer class="page-footer">
-      <include src="./partials/footer.html"></include>
-    </footer>
-
-    <include src="./partials/mobile_menu.html"></include>
-    <include src="./partials/pop_up_for_order.html"></include>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+      <div class="wrapper-modal is-hidden" data-modal>
+        <div class="container-modal">
+          <div class="box">
+            <p style="padding: 0 10px">Підпис - Дмитро Шевченко</p>
+            <button type="button" class="btn-close" data-modal-close>x</button>
+          </div>
+          <div class="box-blue">
+            <p class="title"><span>Сертифікат</span></p>
+            <form class="modal-form">
+              <div class="box">
+                <div class="container-right">
+                  <div class="box">
+                    <label for="recipient-modal">ЄДРПОУ:</label>
+                    <input
+                      class="inp"
+                      type="text"
+                      name="recipient-modal"
+                      id="recipient-modal"
+                    />
+                  </div>
+                  <div class="box">
+                    <label for="term">Термін дії, днів:</label>
+                    <input class="inp" type="text" name="term" id="term" />
+                  </div>
+                </div>
+                <div class="container-right">
+                  <div class="box">
+                    <label for="drfo">ДРФО:</label>
+                    <input class="inp" type="text" name="drfo" id="drfo" />
+                  </div>
+                  <div class="box">
+                    <label for="end-date">Діє до:</label>
+                    <input
+                      class="inp"
+                      type="text"
+                      name="end-date"
+                      id="end-date"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div class="modal-text">
+                <div class="box">
+                  <label for="full-name-modal">ПІБ:</label>
+                  <input
+                    class="m-input"
+                    type="text"
+                    name="full-name-modal"
+                    id="full-name-modal"
+                  />
+                </div>
+                <div class="box">
+                  <label for="publisher">Видавець:</label>
+                  <input
+                    class="m-input"
+                    type="text"
+                    name="publisher"
+                    id="publisher"
+                  />
+                </div>
+              </div>
+            </form>
+            <button type="button" class="btn-modal btn js-choose">
+              Вибрати або завантажити сертифікат
+            </button>
+          </div>
+          <div class="box-blue" style="border-top: none">
+            <p class="title"><span>Ключ</span></p>
+            <div class="file-upload">
+              <input
+                class="input-file"
+                type="text"
+                id="filename"
+                name="filename"
+              />
+              <button class="btn js-choose-btn">Вибрати ключ</button>
+              <input type="file" id="fileInput" hidden />
+            </div>
+          </div>
+          <div class="box-blue" style="border-top: none">
+            <p class="title"><span>Пароль</span></p>
+            <input type="password" class="password js-password" />
+          </div>
+          <div class="box-blue block-btn">
+            <button type="button" class="btn js-button-modal">Підписати</button>
+            <button type="button" class="btn" data-modal-close>Відміна</button>
+          </div>
+        </div>
+      </div>
+    </div>
     <script type="module" src="./index.js"></script>
   </body>
 </html>

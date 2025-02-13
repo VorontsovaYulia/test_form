@@ -18,9 +18,6 @@
     "url": "https://github.com/goitacademy/parcel-project-template/issues"
   },
   "dependencies": {
-    "body-scroll-lock": "^4.0.0-beta.0",
-    "modern-normalize": "^1.1.0",
-    "slim-select": "^2.10.0"
   },
   "devDependencies": {
     "@parcel/optimizer-svgo": "^2.13.3",

@@ -1,0 +1,21 @@
+{
+    "documentName": "Рахунок на ТзОВ від 21.02.2023",
+    "sender": "31489993",
+    "senderOrgName": "СПІЛЬНЕ УКРАЇНСЬКО-ПОЛЬСЬКЕ ПІДПРИЄМСТВО",
+    "recipient": "31608467",
+    "drfo": "31608467",
+    "recipientOrgName": "ТзОВ Перун Плюс",
+    "documentNumber": "22",
+    "date": "12.01.24",
+    "orderNumber":"456",
+    "sum":"151800.00",
+    "signatoryFullName": "Лопатинський І.О.",
+    "email":"test@gmail.com",
+    "comment":"Перевірено",
+    "journalDate": "30.12.2024 22:38:53",
+    "journalIhfo": "Отримано вхідний документ Рахунок (ціна без ПДВ)",
+    "term": "146",
+    "endDate": "26.01.2025 22:40:53",
+    "publisher": "АТ КБ 'ПРИВАТБАНК'",
+    "fullName": "Кучеренко І.П."
+}
