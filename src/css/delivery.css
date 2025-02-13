@@ -1,0 +1,164 @@
+.delivery-container {
+    padding-top: 24px;
+    padding-bottom: 24px;
+}
+
+.delivery-box {
+    position: relative;
+    max-width: 328px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 90px;
+    margin-top: 106px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.delivery-title {
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--dark-text-color);
+}
+
+.delivery-item {
+    position: relative;
+    width: 328px;
+    height: 190px;
+    padding: 24px 16px;
+    background-color: var(--secondary-color);
+}
+
+.delivery-subtitle {
+    text-align: center;
+    margin-bottom: 24px;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 1.5;
+}
+
+.delivery-text {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.4;
+}
+
+.delivery-text:last-child {
+    margin-top: 10px;
+}
+
+.delivery-icon-bg {
+    position: absolute;
+    width: 86px;
+    height: 86px;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    top: -70px;
+    background-color: var(--primary-color);
+    border-radius: 50%;
+}
+
+.delivery-icon {
+    fill: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.line-mobile {
+    position: absolute;
+    left: 88px;
+    top: -46px;
+}
+
+.line-desktop {
+    display: none;
+}
+
+.delivery-icon-car {
+    display: none;
+}
+
+@media screen and (min-width: 768px) {
+    .delivery-container {
+        padding-bottom: 90px;
+
+    }
+
+    .delivery-box {
+        max-width: 768px;
+        flex-direction: row;
+        gap: 28px;
+        margin-top: 232px;
+    }
+
+    .line-mobile {
+        display: none;
+    }
+
+    .line-desktop {
+        display: block;
+        position: absolute;
+        top: -134px;
+        width: 430px;
+    }
+
+    .delivery-icon-car {
+        display: block;
+        position: absolute;
+        top: -164px;
+        fill: var(--third-color)
+    }
+
+}
+
+@media screen and (min-width: 1024px) {
+    .delivery-container {
+        padding-bottom: 122px;
+    }
+
+    .delivery-box {
+        max-width: 1024px;
+    }
+
+
+    .delivery-title {
+        font-size: 32px;
+    }
+
+    .delivery-item {
+        width: 458px;
+        height: 264px;
+        padding-top: 48px;
+        padding-bottom: 36px;
+    }
+
+    .delivery-subtitle {
+        margin-bottom: 24px;
+        font-size: 26px;
+        font-weight: 400;
+        line-height: 1.5;
+    }
+
+    .delivery-text {
+        font-size: 20px;
+        font-weight: 500;
+        line-height: 1.4;
+    }
+
+    .delivery-icon-bg {
+        top: -50px;
+    }
+
+    .line-desktop {
+        top: -128px;
+        width: 540px;
+    }
+
+    .delivery-icon-car {
+        top: -168px;
+    }
+}

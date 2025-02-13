@@ -1,0 +1,13 @@
+@import './common.css';
+
+@import './header.css';
+@import './hero.css';
+@import './advantages.css';
+@import './gallery.css';
+@import './delivery.css';
+@import './reviews.css';
+@import './quick_order.css';
+@import './footer.css';
+@import './mobile_menu.css';
+@import './pop_up_for_order.css';
+@import './404.css';

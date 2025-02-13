@@ -1,0 +1,33 @@
+{
+  "name": "parcel-project-template",
+  "version": "2.0.0",
+  "description": "",
+  "homepage": "https://VorontsovaYulia.github.io/flower-lover",
+  "scripts": {
+    "start": "parcel src/*.html",
+    "build": "parcel build src/*.html --public-url /flower-lover/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/goitacademy/parcel-project-template.git"
+  },
+  "keywords": [],
+  "author": "Alexander Repeta <alexander.repeta@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/goitacademy/parcel-project-template/issues"
+  },
+  "dependencies": {
+    "body-scroll-lock": "^4.0.0-beta.0",
+    "modern-normalize": "^1.1.0",
+    "slim-select": "^2.10.0"
+  },
+  "devDependencies": {
+    "@parcel/optimizer-svgo": "^2.13.3",
+    "parcel": "^2.13.3",
+    "parcel-reporter-clean-dist": "^1.0.4",
+    "posthtml-include": "^1.7.4",
+    "svgo": "^3.3.2"
+  },
+  "browserslist": "> 0.5%, last 2 versions, not dead"
+}

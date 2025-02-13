@@ -1,0 +1,139 @@
+@import '/node_modules/modern-normalize/modern-normalize.css';
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+p:last-child {
+  margin-bottom: 0;
+}
+
+ul,
+ol,
+a {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  color: currentColor;
+  text-decoration: none;
+}
+
+.list {
+  list-style: none;
+}
+
+.link {
+  text-decoration: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.hiddenvisualy {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+button {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  font-weight: 600;
+  font-size: 20px;
+  text-align: center;
+  border-radius: 26px;
+  cursor: pointer;
+}
+
+hr {
+  position: absolute;
+  top: auto;
+  left: 0;
+  width: 100%;
+  margin: 0;
+  border-color: #052c0666;
+}
+
+:root {
+  --light-text-color: #fcfafa;
+  --dark-text-color: #1d0202;
+  --primary-color: #71836d;
+  --secondary-color: #e3dec8;
+  --third-color: #052c06;
+  --fourth-color: rgba(241, 241, 241, 0.95);
+  --first-text-hover: #333125;
+  --second-text-hover: #c6dcc1;
+  --first-btn-hover: #f2c4d3;
+  --first-btn-active: #ed9dbc;
+  --second-btn-hover: #d7e1c2;
+
+  --transition-dur-and-func: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+body {
+  background-color: var(--light-text-color);
+  font-family: 'Vollkorn', sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+}
+
+.container {
+  width: 100%;
+  margin: 0 auto;
+}
+
+@media screen and (min-width: 360px) {
+  .container {
+    min-width: 360px;
+    padding: 0px 20px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .container {
+    max-width: 1440px;
+    padding: 0px 40px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  hr {
+    width: 90%;
+    left: 5%;
+    right: 5%;
+  }
+  .container {
+    padding: 0px 72px;
+  }
+}

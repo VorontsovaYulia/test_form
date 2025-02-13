@@ -1,0 +1,98 @@
+.mobile-menu-backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    background-color: rgba(46, 47, 66, 0.4);
+    visibility: hidden;
+    overflow: hidden;
+    z-index: 4;
+    background: rgba(22, 22, 22, 0.9);
+    transition: transform 1000ms var(--transition-dur-and-func);
+}
+
+.mobile-menu-backdrop.is-open {
+    visibility: visible;
+    transition: transform 1000ms var(--transition-dur-and-func);
+}
+
+.container-mobile {
+    position: fixed;
+    z-index: 666;
+    top: 0;
+    right: 0;
+    width: 50%;
+    height: 100vh;
+    padding-top: 30%;
+    padding-left: 10%;
+    padding-right: 10%;
+    margin-bottom: auto;
+    background-color: var(--primary-color);
+    transform-origin: bottom;
+    transform: scaleY(0);
+    transition: transform 1000ms var(--transition-dur-and-func);
+}
+
+@media screen and (min-width:786px) {
+    .container-mobile {
+        padding-top: 20%;
+    }
+}
+
+.container-mobile.is-open {
+    transform: scaleY(1);
+    transform-origin: top;
+    transition: transform 1000ms var(--transition-dur-and-func);
+}
+
+.burger-close {
+    position: absolute;
+    top: 20;
+    right: 20;
+    padding: 0;
+    margin: 0;
+    border: none;
+    background: transparent;
+
+}
+
+.burger-close:active .icon-x {
+    stroke: var(--light-text-color);
+}
+
+body.show-modal-order-now .order-now-backdrop {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: initial;
+}
+
+.icon-x {
+    stroke: var(--dark-text-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: var(--transition-dur-and-func);
+}
+
+.mobile-menu-list {
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+    color: var(--dark-text-color);
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 1.1;
+}
+
+.mobile-menu-link {
+    transition: var(--transition-dur-and-func);
+}
+
+.mobile-menu-link:active {
+    color: var(--light-text-color);
+}
