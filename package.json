@@ -5,7 +5,8 @@
   "homepage": "https://vorontsovayulia.github.io/test_form/",
   "scripts": {
     "start": "parcel src/*.html",
-    "build": "parcel build src/*.html --public-url /test_form/"
+    "build": "parcel build src/*.html --public-url /test_form/",
+    "build-loc": "parcel build src/*.html --public-url ./"
   },
   "repository": {
     "type": "git",

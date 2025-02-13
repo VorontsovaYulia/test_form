@@ -57,7 +57,6 @@ function openModal() {
   formModal['end-date'].value = '';
   formModal['full-name-modal'].value = '';
   formModal['publisher'].value = '';
-  formModal['publisher'].value = '';
   document.querySelector('#filename').value = '';
   document.querySelector('.js-password').value = '';
   btnChoose.textContent = 'Вибрати або завантажити сертифікат';
@@ -88,6 +87,18 @@ document.addEventListener('keydown', function (event) {
 buttonModal.addEventListener('click', signDocument);
 
 function signDocument() {
+  if (!formModal['recipient-modal'].value) {
+    alert('Завантажте сертифікат');
+    return;
+  }
+  if (!document.querySelector('#filename').value) {
+    alert('Виберіть ключ');
+    return;
+  }
+  if (!document.querySelector('.js-password').value) {
+    alert('Введіть пароль');
+    return;
+  }
   closeModal();
   alert('Документ успішно підписано');
 }
